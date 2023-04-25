@@ -1,0 +1,123 @@
+/*
+ font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    color: white;
+   &.active{
+    background-color: white;
+    color: black;
+    transition: 0.5s all ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   }
+   
+    .container{
+        display: flex;
+        padding: 0px 50px;
+        width:auto;
+        justify-content: center;
+        align-content: space-between;
+        gap: 400px;
+    &.activebg{
+        background-color:rgb(86, 86, 194);
+    }
+        
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            font-family: 'Oswald', sans-serif;
+
+            .text{
+               
+            }
+            .dot{
+                color: greenyellow;
+            }
+            
+        }
+        
+        .links{
+            display: flex;
+            gap: 24px;
+            font-weight: bold;
+            align-items: center;
+            font-family: 'Roboto Slab', serif;
+
+            .user{
+                display: flex;
+                align-items:center;
+                gap: 10px;
+                position: relative;
+                cursor: pointer;
+            
+
+                .option{
+                    position: absolute;
+                    top:50px;
+                    right: -100px;
+                    padding: 20px;
+                    background-color: white;
+                    border: 10px;
+                    border: 1px solid gray;
+                    display: flex;
+                    flex-direction: column;
+                    width: 150px;
+                    gap: 10px;
+                    color: black;
+                }
+            }
+
+            .btnActive{
+                padding: 10px 20px;
+                border: 2px solid black;
+                font-family: 'Roboto Slab', serif;
+                border-radius: 20px;
+                cursor: pointer;
+                color: black;
+                background-color: transparent;
+                &:hover{
+                    background-color: rgb(76, 238, 76);
+                    border-color: rgb(83, 228, 83);
+                }
+           
+            }
+
+
+            .button{
+                padding: 10px 20px;
+                border: 2px solid white;
+                font-family: 'Roboto Slab', serif;
+                border-radius: 20px;
+                cursor: pointer;
+                color: white;
+                background-color: transparent;
+                &:hover{
+                    background-color: rgb(76, 238, 76);
+                    border-color: rgb(83, 228, 83);
+                }
+            }
+
+        }
+    }
+    hr{
+        margin:0px;
+        width: 1300px;
+        border: 0.5 solid lightblue;
+    }
+    .menu{
+        margin-top:-10px;
+        width: auto;
+        display: flex;
+        gap: 20px;
+        padding: 10px 0px;
+        font-weight: 300;
+        color: gray;
+        
+    }
+}

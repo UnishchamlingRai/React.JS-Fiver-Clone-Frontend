@@ -1,0 +1,71 @@
+.features{
+    background-color: rgb(204, 240, 252);
+    display: flex;
+    justify-content: center;
+    padding: 50px 50px;
+    
+    &.color{
+        color: white;
+        background-color: rgb(56, 56, 243);
+    }
+    .container{
+        display: flex;
+        width: 1400px;
+        align-items: center;
+        gap: 200px;
+    }
+    .item{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &:first-child{
+            flex: 2;
+            button{
+                background-color: rgb(97, 230, 97);
+                color: white;
+                width: 100px;
+                display: block;
+                border: 2px solid white;
+                width: 200px;
+                padding: 8px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+        &:last-child{
+            flex: 3;
+        }
+        h1{
+            font-weight: 500;
+            margin-bottom: 10px;
+            margin-top: -10px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            color:gray;
+            line-height: 28px;
+            letter-spacing: 1px;
+            margin-top: -10px;
+        }
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+           
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: -10px;
+            color: gray;
+           
+           
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+        video{
+            width: 620px;
+        }
+    }
+}

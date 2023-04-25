@@ -1,0 +1,62 @@
+.featured{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 100px;
+        justify-content: center;
+        margin-left: 80px;
+        
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            h3{
+                color: white;
+                font-weight: bold;
+            }
+            
+            .search{
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid white;
+                width: 400px;
+                outline: none;
+            }
+            button{
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid white;
+                margin-left: -57px;
+                background: rgb(92, 216, 92);
+                &:hover{
+                    background-color: rgb(30, 148, 30);
+                    
+                }
+                
+            }
+            .popular{
+                margin-left: -40px;
+                .popularList{
+                    display: flex;
+                    gap: 20px;
+                    color: white;
+                    font-weight: bold;
+                    list-style: none;
+                   align-items: center;
+                   li{
+                    padding: 5px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                   }
+                }
+            }
+            
+        }
+    }
+}
